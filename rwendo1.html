@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta @charset="utf-8">
+    <title>rwendo.co.zw Find your favourite places in Zimbabwe</title>
+    <meta name="description" content="rwendo.com, hotels, lodges, residential houses deals in Zimbabwe. hotel booking without fees.">
+    <meta name="keywords" content="ebooking hotels, hotel, hotels, lodge, lodges, house, residential houses, charlet, charlets, booking, bookings, ebooking, e-booking">
+    <style>
+
+body {
+  max-width: 1160px;
+  min-width: 320px;
+  margin: auto;
+  font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+}
+/** Navbar container**/
+.navbar {
+overflow: hidden;
+background-color: orange;
+font-family: Arial;
+
+}
+
+/** Links inside the navbar**/
+.navbar a {
+float: right;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 26px 16px;
+text-decoration: none;
+}
+
+/** The dropdown container **/
+.dropdown {
+float: right;
+overflow: hidden;
+}
+
+/** Dropdown button **/
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: white;
+padding: 26px 16px;
+background-color: inherit;
+font-family: inherit; /** Important for vertical align on mobile phones **/
+margin: 0; /** Important for vertical align on mobile phones **/
+}
+
+/** Add a red background color to navbar links on hover **/
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: green;
+}
+
+/** Dropdown content (hidden by default) **/
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/** Links inside the dropdown **/
+.dropdown-content a {
+float: none;
+color: black;
+padding: 25px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+    /** Add a grey background color to dropdown links on hover **/
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+/** Show the dropdown menu on hover **/
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+  /**Rwendo Logo **/
+
+  #rwendoLogo {
+  float: left;
+  height:;
+}
+
+  #rwendoLogo img {
+  width: auto;
+  height: 56px;
+  padding: 5px 5px;
+  margin: auto;
+}
+
+  h1 {
+  color: green;
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+  margin: auto;
+  padding-top: 16px;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none}
+
+img {
+  vertical-align: middle;
+  height: 770px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1160px;
+  position: relative;
+  margin: auto;
+  margin-top: -150px;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 16px;
+  margin-top: -70px;
+  color: orange;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 24px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*Social media icons*/
+.socialIcons {
+  font-size: 14px;
+  color: black;
+  float: right;
+  box-sizing: border-box;
+  display: block;
+  line-height: 16px;
+}
+
+.socialIcons a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .1s linear;
+  background-color: transparent;
+
+}
+
+
+/*Footer*/
+.footerFollow {
+  float: left;
+  margin-right: 10px;
+}
+
+.facebook, .twitter, .linkedin {
+  float: left;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  background-color: orange;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.flexiContainer {
+  display: flex;
+  padding-bottom: 10px;
+
+}
+
+.footerAddress, .footerNav, .socialIcons {
+  background-color: #f1f1f1;
+  font-size: 16px;
+  margin: 10px;
+  padding: 20px;
+  width: 33.3333%;
+
+}
+
+.footerText {
+  border-top: 1px solid green;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*Hotels, lodges, appartments, curio shops search form*/
+.searchBox {
+  margin-top: 0px;
+  z-index: 10;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+    </style>
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div href="img/rwendo.pdf" id="rwendoLogo" width="" height="">
+        <img src="img/Rwendo logo.jpg">
+        <h1>rwendo.com</h1>
+      </div>
+        <a href="#home">USD</a>
+        <a href="#news">Curio Shops</a>
+      <div class="dropdown">
+        <button class="dropbtn">Cities/Towns
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Bulawayo</a>
+          <a href="#">Chimanimani</a>
+          <a href="#">Harare</a>
+          <a href="#">Hwange</a>
+          <a href="#">Inyanga</a>
+          <a href="#">Kariba</a>
+          <a href="#">Mana Pools</a>
+          <a href="#">Masvingo</a>
+          <a href="#">Victoria Falls</a>
+        </div>
+      </div>
+    </header>
+
+
+  <main>
+    <div class="searchBox">
+      <p>Find the destination in Zimbabwe's hotels, lodges, apartments, hotels, food courts, curio shops</p>
+      <form>
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+      <p>Have a wonderful stay in this Southern savanna climatic conditions</p>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/great zimbabwe1.jpg" style="width:100%">
+      <div class="text">Great Zimbabwe</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/hwange national park4.jpg" style="width:100%">
+      <div class="text">Hwange National Park</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/kariba2.jpg" style="width:100%">
+      <div class="text">Kariba</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/vic falls1.jpg" style="width:100%">
+      <div class="text">Victoria Falls</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/inyanga mountains.jpg" style="width:100%">
+      <div class="text">Inyanga Mountains</div>
+    </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="flexiContainer">
+      <address class="footerAddress">
+      <strong>Rwendo</strong> <br>
+      782-7th Avenue, Parktown,
+      Harare,
+      Zimbabwe.<br>
+      Phone: +263-4-661570 <br>
+      Email: <a href="mailto:rwendo@gmail.com">rwendo@gmail.com</a><br>
+      </address>
+      <div class="footerNav">
+
+    <a class="footerAboutus" href="https://www.rwendo.com/AboutUs">AboutUS</a><br>
+    <a class="footerLegal"href="https://www.rwendo.com/Legal">Legal</a><br>
+    <a class="footerFaq"href="https://www.rwendo.com/FAQ">FAQ</a><br>
+  </div>
+      <div class="socialIcons">
+    <div class="footerFollow">Follow us on</div>
+    <a href="www.facebook.com/rwendo" class="facebook"><span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-1{fill:#4267b2;}.cls-2{fill:#fff;}</style></defs><title>flogo_RGB_HEX-512</title><path class="cls-1" d="M483.74,0H28.26A28.26,28.26,0,0,0,0,28.26V483.74A28.26,28.26,0,0,0,28.26,512H273.5V314H207V236.5h66.5v-57c0-66.13,40.39-102.14,99.38-102.14,28.25,0,52.54,2.1,59.62,3v69.11l-40.68,0c-32.1,0-38.32,15.25-38.32,37.64V236.5h76.74l-10,77.5H353.5V512H483.74A28.26,28.26,0,0,0,512,483.74V28.26A28.26,28.26,0,0,0,483.74,0Z"/><path id="f" class="cls-2" d="M353.5,512V314h66.75l10-77.5H353.5V187.14c0-22.39,6.22-37.64,38.32-37.64l40.68,0V80.37c-7.08-.94-31.37-3-59.62-3-59,0-99.38,36-99.38,102.14v57H207V314h66.5V512Z"/><span></svg></a>
+    <a href="https://www.twitter.com/rwendo" class="twitter"><img src="social icons/twitter icon.png" alt="Twitter icon" style="width: 30px; height:30px;"></a>
+    <a href="https://www.linkedin.com/company/rwendo" class="linkedin"><img src="social icons/linkedIn icon.png" alt="LinkedIn icon" style="width: 30px; height:30px;"></a>
+  </div>
+    </div>
+    <div class="footerText">
+      <p>Rwendo is a project by Rwendo Studios</p>
+      <p>&copy;2018 Rwendo Company | All rights reserved</p>
+    </div>
+
+  </footer>
+
+  <script>
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+//Close the dropdown if the user clicks outside of it//
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </body>
+</html>
